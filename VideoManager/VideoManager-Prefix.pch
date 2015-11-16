@@ -1,0 +1,83 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#import "UIImage+image.h"
+#import "Common.h"
+#import "CoreText/CoreText.h"
+#import "UIView+frameAdjust.h"
+#import "AFNetworking.h"
+#import "NSString+file.h"
+#import "MBProgressHUD+show.h"
+#import "SVProgressHUD.h"
+#import "Common.h"
+#import "UIBarButtonItem+creat.h"
+#import "UIButton+bg.h"
+#import "NSURLRequest+Url.h"
+#import "AccountTool.h"
+#import "User.h"
+#import "UIImageView+WebCache.h"
+#import "LPPopup.h"
+#import "AppDelegate.h"
+#import "AutoSize.h"
+#import "NSObject+MJKeyValue.h"
+#import "SVProgressHUD.h"
+#import "MoveTool.h"
+#import "OrderRecordTool.h"
+#import "OrderRecord.h"
+#import "ToastMessage.h"
+#define kAutoSizeScaleX [[AutoSize sharedAutoSize] getAutoSize].autoSizeScaleX
+
+#define kAutoSizeScaleY [[AutoSize sharedAutoSize] getAutoSize].autoSizeScaleY
+
+//#define kBaseUrl @"http://192.168.191.2:8088/AMEI/"
+
+//#define kBaseUrl @"http://172.18.126.248:8088/AMEI/"
+
+#define kBaseUrl @"http://www.fhzpt.com:8082/EnterClinic/"
+
+#define kPassWord @"Password"
+
+#define kPhone @"UserID"
+
+#define kGetFriendsPath @"GetFriends"
+
+#define kGetMyOrderPath @"GetMyOrder"
+
+#define kDeleteFriendsPath @"DeleteFriends"
+
+#define kAddFriendsPath @"AddFriends"
+
+#define kRequestPush @"requestPush"
+
+#define kDeviceToken @"DeviceToken"
+
+#define kSharkPath @"Shark"
+
+#define kRegistUserPath @"RegistUser"
+
+#define kUpdateUserPath @"UpdateUser"
+
+#define kUpdateGameInfoPath @"UpdateGameInfo"
+
+#define kSubmitResultPath @"SubmitResult"
+
+#define kGetMyInfoPath @"GetMyInfo"
+
+#define kUploadImagePath @"UploadImage"
+
+#define kselfUser [AccountTool sharedAccountTool].myUser
